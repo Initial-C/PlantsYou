@@ -13,6 +13,19 @@
 		537A64761D464EF200F1E6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537A64741D464EF200F1E6CC /* LaunchScreen.storyboard */; };
 		53D279D51D47217600E387BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279CF1D47217600E387BD /* AppDelegate.m */; };
 		53D279D61D47217600E387BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279D01D47217600E387BD /* main.m */; };
+		53D279EC1D49F4D700E387BD /* NSDate+ZWDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279E31D49F4D700E387BD /* NSDate+ZWDate.m */; };
+		53D279ED1D49F4D700E387BD /* UIBarButtonItem+navItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279E51D49F4D700E387BD /* UIBarButtonItem+navItem.m */; };
+		53D279EE1D49F4D700E387BD /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279E71D49F4D700E387BD /* UIImage+Image.m */; };
+		53D279EF1D49F4D700E387BD /* UITextField+ZWPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279E91D49F4D700E387BD /* UITextField+ZWPlaceholder.m */; };
+		53D279F01D49F4D700E387BD /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279EB1D49F4D700E387BD /* UIView+Frame.m */; };
+		53D279FE1D49F7C500E387BD /* PYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D279FD1D49F7C500E387BD /* PYTabBarController.m */; };
+		53D27A011D49F9C100E387BD /* PYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D27A001D49F9C100E387BD /* PYNavigationController.m */; };
+		53D27A041D49FE4100E387BD /* PYPlantLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D27A031D49FE4100E387BD /* PYPlantLifeViewController.m */; };
+		53D27A0A1D49FEFD00E387BD /* PYPlantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D27A091D49FEFD00E387BD /* PYPlantsViewController.m */; };
+		53D27A0D1D49FF4B00E387BD /* PYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D27A0C1D49FF4B00E387BD /* PYMeViewController.m */; };
+		53D27A111D4A03C600E387BD /* info-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53D27A0E1D4A03C600E387BD /* info-cover.jpg */; };
+		53D27A121D4A03C600E387BD /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D27A0F1D4A03C600E387BD /* launch.png */; };
+		53D27A131D4A03C600E387BD /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D27A101D4A03C600E387BD /* LaunchImage-700-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +40,30 @@
 		53D279CE1D47217600E387BD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53D279CF1D47217600E387BD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53D279D01D47217600E387BD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53D279E01D49F42900E387BD /* PlantsYou.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantsYou.pch; sourceTree = "<group>"; };
+		53D279E21D49F4D700E387BD /* NSDate+ZWDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZWDate.h"; sourceTree = "<group>"; };
+		53D279E31D49F4D700E387BD /* NSDate+ZWDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZWDate.m"; sourceTree = "<group>"; };
+		53D279E41D49F4D700E387BD /* UIBarButtonItem+navItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+navItem.h"; sourceTree = "<group>"; };
+		53D279E51D49F4D700E387BD /* UIBarButtonItem+navItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+navItem.m"; sourceTree = "<group>"; };
+		53D279E61D49F4D700E387BD /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		53D279E71D49F4D700E387BD /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		53D279E81D49F4D700E387BD /* UITextField+ZWPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZWPlaceholder.h"; sourceTree = "<group>"; };
+		53D279E91D49F4D700E387BD /* UITextField+ZWPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZWPlaceholder.m"; sourceTree = "<group>"; };
+		53D279EA1D49F4D700E387BD /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		53D279EB1D49F4D700E387BD /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		53D279FC1D49F7C500E387BD /* PYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTabBarController.h; sourceTree = "<group>"; };
+		53D279FD1D49F7C500E387BD /* PYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTabBarController.m; sourceTree = "<group>"; };
+		53D279FF1D49F9C100E387BD /* PYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYNavigationController.h; sourceTree = "<group>"; };
+		53D27A001D49F9C100E387BD /* PYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYNavigationController.m; sourceTree = "<group>"; };
+		53D27A021D49FE4100E387BD /* PYPlantLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYPlantLifeViewController.h; sourceTree = "<group>"; };
+		53D27A031D49FE4100E387BD /* PYPlantLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYPlantLifeViewController.m; sourceTree = "<group>"; };
+		53D27A081D49FEFD00E387BD /* PYPlantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYPlantsViewController.h; sourceTree = "<group>"; };
+		53D27A091D49FEFD00E387BD /* PYPlantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYPlantsViewController.m; sourceTree = "<group>"; };
+		53D27A0B1D49FF4A00E387BD /* PYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMeViewController.h; sourceTree = "<group>"; };
+		53D27A0C1D49FF4B00E387BD /* PYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMeViewController.m; sourceTree = "<group>"; };
+		53D27A0E1D4A03C600E387BD /* info-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "info-cover.jpg"; sourceTree = "<group>"; };
+		53D27A0F1D4A03C600E387BD /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		53D27A101D4A03C600E387BD /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +103,9 @@
 				537A64721D464EF200F1E6CC /* Assets.xcassets */,
 				537A64741D464EF200F1E6CC /* LaunchScreen.storyboard */,
 				537A64771D464EF200F1E6CC /* Info.plist */,
+				53D27A0E1D4A03C600E387BD /* info-cover.jpg */,
+				53D27A0F1D4A03C600E387BD /* launch.png */,
+				53D27A101D4A03C600E387BD /* LaunchImage-700-568h@2x.png */,
 				537A64661D464EF200F1E6CC /* Supporting Files */,
 			);
 			path = PlantsYou;
@@ -82,7 +122,8 @@
 		53D279C71D47217600E387BD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				53D279C81D47217600E387BD /* MainLive */,
+				53D279F81D49F79200E387BD /* Main */,
+				53D279F11D49F76700E387BD /* PlantLife */,
 				53D279D11D47217600E387BD /* Plants */,
 				53D279CC1D47217600E387BD /* Me */,
 				53D279CD1D47217600E387BD /* Others */,
@@ -90,40 +131,12 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		53D279C81D47217600E387BD /* MainLive */ = {
-			isa = PBXGroup;
-			children = (
-				53D279C91D47217600E387BD /* Controller */,
-				53D279CA1D47217600E387BD /* Model */,
-				53D279CB1D47217600E387BD /* View */,
-			);
-			path = MainLive;
-			sourceTree = "<group>";
-		};
-		53D279C91D47217600E387BD /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		53D279CA1D47217600E387BD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		53D279CB1D47217600E387BD /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		53D279CC1D47217600E387BD /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				53D279F51D49F78A00E387BD /* Controller */,
+				53D279F61D49F78A00E387BD /* Model */,
+				53D279F71D49F78A00E387BD /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -131,9 +144,11 @@
 		53D279CD1D47217600E387BD /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				53D279E11D49F4D700E387BD /* Category */,
 				53D279CE1D47217600E387BD /* AppDelegate.h */,
 				53D279CF1D47217600E387BD /* AppDelegate.m */,
 				53D279D01D47217600E387BD /* main.m */,
+				53D279E01D49F42900E387BD /* PlantsYou.pch */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -151,6 +166,8 @@
 		53D279D21D47217600E387BD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				53D27A081D49FEFD00E387BD /* PYPlantsViewController.h */,
+				53D27A091D49FEFD00E387BD /* PYPlantsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +180,114 @@
 			sourceTree = "<group>";
 		};
 		53D279D41D47217600E387BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D279E11D49F4D700E387BD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				53D279E21D49F4D700E387BD /* NSDate+ZWDate.h */,
+				53D279E31D49F4D700E387BD /* NSDate+ZWDate.m */,
+				53D279E41D49F4D700E387BD /* UIBarButtonItem+navItem.h */,
+				53D279E51D49F4D700E387BD /* UIBarButtonItem+navItem.m */,
+				53D279E61D49F4D700E387BD /* UIImage+Image.h */,
+				53D279E71D49F4D700E387BD /* UIImage+Image.m */,
+				53D279E81D49F4D700E387BD /* UITextField+ZWPlaceholder.h */,
+				53D279E91D49F4D700E387BD /* UITextField+ZWPlaceholder.m */,
+				53D279EA1D49F4D700E387BD /* UIView+Frame.h */,
+				53D279EB1D49F4D700E387BD /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		53D279F11D49F76700E387BD /* PlantLife */ = {
+			isa = PBXGroup;
+			children = (
+				53D279F21D49F76700E387BD /* Controller */,
+				53D279F31D49F76700E387BD /* Model */,
+				53D279F41D49F76700E387BD /* View */,
+			);
+			path = PlantLife;
+			sourceTree = "<group>";
+		};
+		53D279F21D49F76700E387BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53D27A021D49FE4100E387BD /* PYPlantLifeViewController.h */,
+				53D27A031D49FE4100E387BD /* PYPlantLifeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53D279F31D49F76700E387BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D279F41D49F76700E387BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D279F51D49F78A00E387BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53D27A0B1D49FF4A00E387BD /* PYMeViewController.h */,
+				53D27A0C1D49FF4B00E387BD /* PYMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53D279F61D49F78A00E387BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D279F71D49F78A00E387BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D279F81D49F79200E387BD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				53D279F91D49F79200E387BD /* Controller */,
+				53D279FA1D49F79200E387BD /* Model */,
+				53D279FB1D49F79200E387BD /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		53D279F91D49F79200E387BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53D279FC1D49F7C500E387BD /* PYTabBarController.h */,
+				53D279FD1D49F7C500E387BD /* PYTabBarController.m */,
+				53D279FF1D49F9C100E387BD /* PYNavigationController.h */,
+				53D27A001D49F9C100E387BD /* PYNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53D279FA1D49F79200E387BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D279FB1D49F79200E387BD /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -195,6 +320,7 @@
 		537A645B1D464EF200F1E6CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PY;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Mr.C;
 				TargetAttributes = {
@@ -226,8 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D27A131D4A03C600E387BD /* LaunchImage-700-568h@2x.png in Resources */,
+				53D27A121D4A03C600E387BD /* launch.png in Resources */,
 				537A64761D464EF200F1E6CC /* LaunchScreen.storyboard in Resources */,
 				537A64731D464EF200F1E6CC /* Assets.xcassets in Resources */,
+				53D27A111D4A03C600E387BD /* info-cover.jpg in Resources */,
 				537A64711D464EF200F1E6CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +370,17 @@
 			files = (
 				537A646E1D464EF200F1E6CC /* ViewController.m in Sources */,
 				53D279D61D47217600E387BD /* main.m in Sources */,
+				53D27A0A1D49FEFD00E387BD /* PYPlantsViewController.m in Sources */,
+				53D279F01D49F4D700E387BD /* UIView+Frame.m in Sources */,
+				53D27A0D1D49FF4B00E387BD /* PYMeViewController.m in Sources */,
+				53D27A011D49F9C100E387BD /* PYNavigationController.m in Sources */,
+				53D279FE1D49F7C500E387BD /* PYTabBarController.m in Sources */,
 				53D279D51D47217600E387BD /* AppDelegate.m in Sources */,
+				53D279EF1D49F4D700E387BD /* UITextField+ZWPlaceholder.m in Sources */,
+				53D279EE1D49F4D700E387BD /* UIImage+Image.m in Sources */,
+				53D27A041D49FE4100E387BD /* PYPlantLifeViewController.m in Sources */,
+				53D279EC1D49F4D700E387BD /* NSDate+ZWDate.m in Sources */,
+				53D279ED1D49F4D700E387BD /* UIBarButtonItem+navItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +492,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PlantsYou/Classes/Others/PlantsYou.pch;
 				INFOPLIST_FILE = PlantsYou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imust.PlantsYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,7 +506,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PlantsYou/Classes/Others/PlantsYou.pch;
 				INFOPLIST_FILE = PlantsYou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imust.PlantsYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
