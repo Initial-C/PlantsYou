@@ -43,7 +43,7 @@
 //    showGreenView.frame = CGRectMake(0, 0, 500, 900);
 //    [UIView commitAnimations]; // 提交动画
             // 方案2
-    [UIView animateWithDuration:3.0 delay:0.5 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:2.0 delay:0.5 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         showGreenView.alpha = 0.0;
         showGreenView.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5, 1.5, 1.0);
     } completion:^(BOOL finished) {
@@ -56,9 +56,7 @@
 //    } completion:^(BOOL finished) {
 //        [showGreenView removeFromSuperview];
 //    }];
-    
-    
-    
+  
     return YES;
 }
 

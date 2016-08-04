@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PYMeViewController : UIViewController
+@interface PYMeViewController : UITableViewController
 
 @end

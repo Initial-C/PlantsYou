@@ -27,6 +27,8 @@
 
 - (void)setUpTabBar {
     [self.tabBar setTranslucent:NO]; // 取消tabBar半透明
+    
+    self.tabBar.tintColor = ZWColor(8, 192, 176, 1.0);
 }
 
 - (void)addAllChildViewController {
@@ -37,7 +39,8 @@
     PYPlantsViewController *plantsVC = [[PYPlantsViewController alloc] initWithStyle:UITableViewStyleGrouped];
     [self setUpOneChildViewController:plantsVC setTitle:@"植物" setImage:@"search" setSelImage:@"search-selected"];
     // 我
-    PYMeViewController *meVC = [[PYMeViewController alloc] init];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"PYMeViewController" bundle:nil];
+    PYMeViewController *meVC = [sb instantiateViewControllerWithIdentifier:@"meCell"];
     [self setUpOneChildViewController:meVC setTitle:@"我" setImage:@"me" setSelImage:@"me-selected"];
     
     

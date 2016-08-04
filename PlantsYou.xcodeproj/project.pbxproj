@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		537A646E1D464EF200F1E6CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537A646D1D464EF200F1E6CC /* ViewController.m */; };
+		53174DC11D4BAF1500DB6AFC /* PYMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53174DC01D4BAF1500DB6AFC /* PYMeViewController.storyboard */; };
+		53174DC51D4BBBC000DB6AFC /* PYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53174DC31D4BBBC000DB6AFC /* PYMyViewController.m */; };
+		53174DC61D4BBBC000DB6AFC /* PYMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53174DC41D4BBBC000DB6AFC /* PYMyViewController.xib */; };
 		537A64711D464EF200F1E6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537A646F1D464EF200F1E6CC /* Main.storyboard */; };
 		537A64731D464EF200F1E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537A64721D464EF200F1E6CC /* Assets.xcassets */; };
 		537A64761D464EF200F1E6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537A64741D464EF200F1E6CC /* LaunchScreen.storyboard */; };
@@ -26,13 +28,19 @@
 		53D27A111D4A03C600E387BD /* info-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53D27A0E1D4A03C600E387BD /* info-cover.jpg */; };
 		53D27A121D4A03C600E387BD /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D27A0F1D4A03C600E387BD /* launch.png */; };
 		53D27A131D4A03C600E387BD /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D27A101D4A03C600E387BD /* LaunchImage-700-568h@2x.png */; };
+		53D27A191D4B59EE00E387BD /* PYTopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D27A181D4B59EE00E387BD /* PYTopMenuModel.m */; };
+		E3E274CB5DBE7EACACE3DCC7 /* libPods-PlantsYou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F777B10B594F1447D12370BB /* libPods-PlantsYou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151AA40DBF37694CBBBADE46 /* Pods-PlantsYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantsYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantsYou/Pods-PlantsYou.release.xcconfig"; sourceTree = "<group>"; };
+		1BCBD68419FAB80EFE57CC8D /* Pods-PlantsYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantsYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantsYou/Pods-PlantsYou.debug.xcconfig"; sourceTree = "<group>"; };
+		53174DC01D4BAF1500DB6AFC /* PYMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PYMeViewController.storyboard; sourceTree = "<group>"; };
+		53174DC21D4BBBC000DB6AFC /* PYMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMyViewController.h; sourceTree = "<group>"; };
+		53174DC31D4BBBC000DB6AFC /* PYMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMyViewController.m; sourceTree = "<group>"; };
+		53174DC41D4BBBC000DB6AFC /* PYMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYMyViewController.xib; sourceTree = "<group>"; };
 		537A64631D464EF200F1E6CC /* PlantsYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantsYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537A64671D464EF200F1E6CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		537A646C1D464EF200F1E6CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		537A646D1D464EF200F1E6CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		537A64701D464EF200F1E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		537A64721D464EF200F1E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537A64751D464EF200F1E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +72,9 @@
 		53D27A0E1D4A03C600E387BD /* info-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "info-cover.jpg"; sourceTree = "<group>"; };
 		53D27A0F1D4A03C600E387BD /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		53D27A101D4A03C600E387BD /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		53D27A171D4B59EE00E387BD /* PYTopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTopMenuModel.h; sourceTree = "<group>"; };
+		53D27A181D4B59EE00E387BD /* PYTopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTopMenuModel.m; sourceTree = "<group>"; };
+		F777B10B594F1447D12370BB /* libPods-PlantsYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlantsYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +82,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E274CB5DBE7EACACE3DCC7 /* libPods-PlantsYou.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39A6EE078D999327C15DD711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F777B10B594F1447D12370BB /* libPods-PlantsYou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		537A645A1D464EF200F1E6CC = {
 			isa = PBXGroup;
 			children = (
 				537A64651D464EF200F1E6CC /* PlantsYou */,
 				537A64641D464EF200F1E6CC /* Products */,
+				C6840F0956CE7DC77A8C5F28 /* Pods */,
+				39A6EE078D999327C15DD711 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				53D279C71D47217600E387BD /* Classes */,
-				537A646C1D464EF200F1E6CC /* ViewController.h */,
-				537A646D1D464EF200F1E6CC /* ViewController.m */,
 				537A646F1D464EF200F1E6CC /* Main.storyboard */,
 				537A64721D464EF200F1E6CC /* Assets.xcassets */,
 				537A64741D464EF200F1E6CC /* LaunchScreen.storyboard */,
@@ -225,6 +245,8 @@
 		53D279F31D49F76700E387BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				53D27A171D4B59EE00E387BD /* PYTopMenuModel.h */,
+				53D27A181D4B59EE00E387BD /* PYTopMenuModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +263,10 @@
 			children = (
 				53D27A0B1D49FF4A00E387BD /* PYMeViewController.h */,
 				53D27A0C1D49FF4B00E387BD /* PYMeViewController.m */,
+				53174DC01D4BAF1500DB6AFC /* PYMeViewController.storyboard */,
+				53174DC21D4BBBC000DB6AFC /* PYMyViewController.h */,
+				53174DC31D4BBBC000DB6AFC /* PYMyViewController.m */,
+				53174DC41D4BBBC000DB6AFC /* PYMyViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +320,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C6840F0956CE7DC77A8C5F28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBD68419FAB80EFE57CC8D /* Pods-PlantsYou.debug.xcconfig */,
+				151AA40DBF37694CBBBADE46 /* Pods-PlantsYou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,9 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 537A647A1D464EF200F1E6CC /* Build configuration list for PBXNativeTarget "PlantsYou" */;
 			buildPhases = (
+				DBD25B16C38EE938670169D4 /* [CP] Check Pods Manifest.lock */,
 				537A645F1D464EF200F1E6CC /* Sources */,
 				537A64601D464EF200F1E6CC /* Frameworks */,
 				537A64611D464EF200F1E6CC /* Resources */,
+				2155B12E588714962EF7F290 /* [CP] Embed Pods Frameworks */,
+				B2777BA3639695D066A24454 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,8 +392,10 @@
 			files = (
 				53D27A131D4A03C600E387BD /* LaunchImage-700-568h@2x.png in Resources */,
 				53D27A121D4A03C600E387BD /* launch.png in Resources */,
+				53174DC11D4BAF1500DB6AFC /* PYMeViewController.storyboard in Resources */,
 				537A64761D464EF200F1E6CC /* LaunchScreen.storyboard in Resources */,
 				537A64731D464EF200F1E6CC /* Assets.xcassets in Resources */,
+				53174DC61D4BBBC000DB6AFC /* PYMyViewController.xib in Resources */,
 				53D27A111D4A03C600E387BD /* info-cover.jpg in Resources */,
 				537A64711D464EF200F1E6CC /* Main.storyboard in Resources */,
 			);
@@ -363,12 +403,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2155B12E588714962EF7F290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlantsYou/Pods-PlantsYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2777BA3639695D066A24454 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlantsYou/Pods-PlantsYou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD25B16C38EE938670169D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		537A645F1D464EF200F1E6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537A646E1D464EF200F1E6CC /* ViewController.m in Sources */,
 				53D279D61D47217600E387BD /* main.m in Sources */,
 				53D27A0A1D49FEFD00E387BD /* PYPlantsViewController.m in Sources */,
 				53D279F01D49F4D700E387BD /* UIView+Frame.m in Sources */,
@@ -377,8 +464,10 @@
 				53D279FE1D49F7C500E387BD /* PYTabBarController.m in Sources */,
 				53D279D51D47217600E387BD /* AppDelegate.m in Sources */,
 				53D279EF1D49F4D700E387BD /* UITextField+ZWPlaceholder.m in Sources */,
+				53D27A191D4B59EE00E387BD /* PYTopMenuModel.m in Sources */,
 				53D279EE1D49F4D700E387BD /* UIImage+Image.m in Sources */,
 				53D27A041D49FE4100E387BD /* PYPlantLifeViewController.m in Sources */,
+				53174DC51D4BBBC000DB6AFC /* PYMyViewController.m in Sources */,
 				53D279EC1D49F4D700E387BD /* NSDate+ZWDate.m in Sources */,
 				53D279ED1D49F4D700E387BD /* UIBarButtonItem+navItem.m in Sources */,
 			);
@@ -490,6 +579,7 @@
 		};
 		537A647B1D464EF200F1E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCBD68419FAB80EFE57CC8D /* Pods-PlantsYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -504,6 +594,7 @@
 		};
 		537A647C1D464EF200F1E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151AA40DBF37694CBBBADE46 /* Pods-PlantsYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -19,10 +19,12 @@
     
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     attributes[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    attributes[NSFontAttributeName] = [UIFont systemFontOfSize:20];
+    attributes[NSFontAttributeName] = [UIFont systemFontOfSize:18];
     [bar setTitleTextAttributes:attributes];
 //    UIImage *navBgImage = [UIImage imageNamed:@"barbg"];
-//    [navBgImage resizableImageWithCapInsets:UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>)]
+//    [navBgImage resizableImageWithCapInsets:UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>)]  // 已经不需要让导航条图片拉伸了
+    
+    bar.tintColor = [UIColor whiteColor];
     [bar setBackgroundImage:[UIImage imageNamed:@"barbg"] forBarMetrics:UIBarMetricsDefault];
     
 }

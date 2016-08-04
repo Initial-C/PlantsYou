@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  PYMyViewController.h
 //  PlantsYou
 //
-//  Created by Mr.C on 16/7/25.
+//  Created by Mr.C on 16/7/30.
 //  Copyright © 2016年 Mr.C. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PYMyViewController : UIViewController
 
 @end
-

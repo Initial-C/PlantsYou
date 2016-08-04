@@ -7,31 +7,49 @@
 //
 
 #import "PYMeViewController.h"
+#import "PYMyViewController.h"
 
 @interface PYMeViewController ()
+@property (weak, nonatomic) IBOutlet UITableViewCell *myFavoriteArticleCell;
+@property (weak, nonatomic) IBOutlet UITableViewCell *myFavoritePlantsCell;
+//@property (weak, nonatomic) PYMyViewController *myFavoriteVC;
 
 @end
 
+static NSString * const meCell = @"meCell";
 @implementation PYMeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
+
+    self.title = @"我";
+    
+    _myFavoriteArticleCell.imageView.image = [UIImage imageNamed:@"me-favorite-article"];
+    _myFavoriteArticleCell.textLabel.text = @"我收藏的文章";
+    _myFavoriteArticleCell.separatorInset = UIEdgeInsetsZero;
+    _myFavoriteArticleCell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"me-favorite-accessory"]];
+    
+    _myFavoritePlantsCell.imageView.image = [UIImage imageNamed:@"me-favorite-plant"];
+    _myFavoritePlantsCell.textLabel.text = @"我收藏的植物";
+    _myFavoritePlantsCell.separatorInset = UIEdgeInsetsZero;
+    _myFavoritePlantsCell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"me-favorite-accessory"]];
+    
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    PYMyViewController *myFavoriteVC = [[PYMyViewController alloc] init];
+    if (indexPath.row == 0) {
+        myFavoriteVC.title = @"收藏的文章";
+//        [self.navigationController pushViewController:_myFavoriteVC animated:YES];
+    } else {
+        myFavoriteVC.title = @"收藏的植物";
+    }
+    [self.navigationController pushViewController:myFavoriteVC animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
 
 @end
