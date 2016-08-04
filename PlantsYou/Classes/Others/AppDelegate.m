@@ -8,18 +8,29 @@
 
 #import "AppDelegate.h"
 #import "PYTabBarController.h"
+#import "PYLoadNetLaunchImage.h"
 #import <QuartzCore/QuartzCore.h>
+
+#define launchImageURL @"http://ugarden.qiniudn.com/resources/upload/penyou/launch-image"
 @interface AppDelegate ()
+
+@property (strong, nonatomic) NSMutableDictionary *images;
 
 @end
 
 @implementation AppDelegate
 
+- (NSMutableDictionary *)images {
+    if (_images == nil) {
+        _images = [NSMutableDictionary dictionary];
+    }
+    return _images;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    // 添加启动风景
+
     PYTabBarController *tabV = [[PYTabBarController alloc] init];
     self.window.rootViewController = tabV;
     [self.window makeKeyAndVisible];
@@ -28,8 +39,57 @@
     // 设置启动动画淡入淡出放大
     UIImageView *showGreenView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     showGreenView.contentMode = UIViewContentModeScaleAspectFill;
-    NSString *greenImagePath = [[NSBundle mainBundle]pathForResource:@"launch.png" ofType:nil];
-    showGreenView.image = [UIImage imageWithContentsOfFile:greenImagePath];
+    
+#pragma mark - 下载启动图片
+    NSString *fileName = [launchImageURL lastPathComponent];
+    // 到内存中找
+    UIImage *launchImage = [self.images objectForKey:fileName];
+    if (launchImage) {
+        showGreenView.image = launchImage;
+    }else {
+        // 就到磁盘上找
+        NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject];
+        NSString *fileFull = [caches stringByAppendingPathComponent:fileName]; //拼接全路径
+        NSData *imageData = [NSData dataWithContentsOfFile:fileFull];
+        if (imageData) {
+            UIImage *launchImage = [UIImage imageWithData:imageData];
+            showGreenView.image = launchImage;
+            NSLog(@"使用了磁盘缓存");
+            // 1. 先保存到内存中
+            [self.images setObject:launchImage forKey:fileName];
+            
+        }else {
+            if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:launchImageURL]]) {
+                NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+                // 封装操作
+                NSBlockOperation *downLoad = [NSBlockOperation blockOperationWithBlock:^{
+                    NSURL *url = [NSURL URLWithString:launchImageURL];
+                    NSData *imageData = [NSData dataWithContentsOfURL:url];
+                    UIImage *launchImage = [UIImage imageWithData:imageData];
+                    
+                    // 1. 先保存到内存中
+                    [self.images setObject:launchImage forKey:fileName];
+                    // 2. 然后保存到磁盘中
+                    [imageData writeToFile:fileFull atomically:YES];
+                    NSLog(@"从网络下载启动图");
+                    // 获得主队列
+                    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                        showGreenView.image = launchImage;     // *************#############@@@@@@@@@@@@
+//                        NSLog(@"UI---downLoad---%@", [NSThread currentThread]);
+                    }];
+                }];
+                
+                [queue addOperation:downLoad];
+            } else {
+                
+                NSString *greenImagePath = [[NSBundle mainBundle]pathForResource:@"launch.png" ofType:nil];
+                showGreenView.image = [UIImage imageWithContentsOfFile:greenImagePath];
+            }
+            
+        }
+        
+    }
+#pragma mark - 启动动画方案
         // 放最顶层
     [self.window addSubview:showGreenView];
 //    [self.window bringSubviewToFront:showGreenView];

@@ -16,5 +16,7 @@
 // 防止图片被渲染
 + (UIImage *)imageWithOriImage:(NSString *)imageName;
 
+//+ (UIImage *)imageWithLaunchImageFromNet:(NSString *)launchImageURL;
+
 
 @end
